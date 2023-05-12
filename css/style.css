@@ -26,6 +26,14 @@ a{
     justify-content: right;
     
 }
+footer{
+    background-color: #282828;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+/*Header*/
 #bt_head{
     margin-right: 5px;
     margin-top: 24px;
@@ -36,4 +44,16 @@ a{
     font-weight: bold;
     height: 42px;
 }
- /*Header*/
+
+/*left navbar*/
+.left_nav{
+    float: left;
+    width: 56px;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: -90px;
+}
+/*Footer*/
+
+

@@ -13,7 +13,27 @@
     font-family: 'Montserrat', sans-serif;
     font-family: 'PT Sans', sans-serif;
  }
-
- /*Utilties*/
-
- /*Sidebar*/
+ header{
+    height: 90px;
+    background-color: #080b12;
+ }
+a{
+    text-decoration: none;
+}
+/*Utilties*/
+.btn{
+    display: flex;
+    justify-content: right;
+    
+}
+#bt_head{
+    margin-right: 5px;
+    margin-top: 24px;
+    border: solid white 1px;
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-weight: bold;
+    height: 42px;
+}
+ /*Header*/

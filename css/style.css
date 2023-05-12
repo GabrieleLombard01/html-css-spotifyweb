@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
  }
- 
  /*Pseudo-classes*/
  
  /*Generics*/
@@ -34,6 +33,10 @@ footer{
     justify-content: center;
     align-items: center;
 }
+img{
+    object-fit: cover;
+    height: 100%;
+}
 /*Utilties*/
 .btn{
     display: flex;
@@ -46,6 +49,10 @@ footer{
     background-color: #5a5a5a;
     border-radius: 5px;
 }
+.white_text{
+    color: white;
+    padding-top: 0;
+}
 /*Header*/
 #bt_head{
     margin-right: 5px;
@@ -57,7 +64,6 @@ footer{
     font-weight: bold;
     height: 42px;
 }
-
 /*left navbar*/
 .left_nav{
     padding-top: 10px;
@@ -87,9 +93,6 @@ footer{
     line-height: 40px;
     padding-left: 3px;
 }
-.second_group{
-    
-}
 .fa-download{
     padding-left: 10px;
 }
@@ -99,9 +102,31 @@ footer{
 }
 /*Footer*/
 .foot_section{
-    border: solid red 1px;
-    height: 40px;
+    height: 50px;
     width: calc(100% / 3);
+}
+.center_now{
+    padding-left: 5px;
+}
+.now_play{
+    display: flex;
+    gap: 3px;
+}
+.now_fig{
+    float: right;
+    padding-right: 5px;
+}
+.foot_now{
+    height: 100%;
+    width: calc(100% / 3);
+}
+#title_song{
+    font-size: 10px;
+    color: white;
+}
+.icon_square{
+    height: 50%;
+    width: 100%;
 }
 .large_f-s{
     height: 80px;
@@ -114,7 +139,6 @@ footer{
 .play_sup{
     height: calc(100% / 2);
     width: 100%;
-    
 }
 .play_sup .fa-solid{
     padding-top: 20px;
@@ -126,7 +150,6 @@ footer{
 .square_play{
     width: calc(100% / 5);
     height: 100%;
-    border: solid blue 1px;
     text-align: center;
 }
 .space_time_line{
@@ -142,7 +165,6 @@ footer{
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 2px;
 }
 .foot_option{
     width: calc(100% / 6);
@@ -150,10 +172,9 @@ footer{
     height: 100%;
 }
 .foot_option .fa-solid{
-    line-height: 38px;
+    line-height: 50px;
 }
 .time_vol{
     display: inline-block;
     width: calc(100% / 2.5);
-
 }

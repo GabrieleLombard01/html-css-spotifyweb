@@ -12,6 +12,7 @@
     font-family: 'Lobster', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'PT Sans', sans-serif;
+    min-height: 180px;
  }
  header{
     height: 90px;
@@ -20,18 +21,18 @@
 a{
     text-decoration: none;
 }
-/*Utilties*/
-.btn{
-    display: flex;
-    justify-content: right;
-    
-}
 footer{
     background-color: #282828;
     height: 90px;
     width: 100%;
     position: fixed;
     bottom: 0;
+}
+/*Utilties*/
+.btn{
+    display: flex;
+    justify-content: right;
+    
 }
 /*Header*/
 #bt_head{
@@ -47,12 +48,30 @@ footer{
 
 /*left navbar*/
 .left_nav{
-    float: left;
     width: 56px;
     height: 100vh;
     background-color: black;
     position: fixed;
     top: -90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left_nav:first-child{
+    margin-top: 100px;
+
+}
+.nav_square{
+    border: solid white 1px;
+    height: 40px;
+    width: 40px;
+}
+.nav_square .fa-solid {
+    line-height: 40px;
+}
+.nav_square .fa-brands{
+    line-height: 40px;
+    padding-left: 3px;
 }
 /*Footer*/
 

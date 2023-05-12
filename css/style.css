@@ -48,29 +48,41 @@ footer{
 
 /*left navbar*/
 .left_nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 56px;
-    height: 100vh;
+    height: calc(100vh - 90px);
     background-color: black;
     position: fixed;
     top: -90px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 .left_nav:first-child{
-    margin-top: 100px;
-
+    margin-top: 90px;
 }
 .nav_square{
-    border: solid white 1px;
     height: 40px;
     width: 40px;
+    margin-bottom: 10px;
 }
 .nav_square .fa-solid {
     line-height: 40px;
 }
 .nav_square .fa-brands{
     line-height: 40px;
+    padding-left: 3px;
+}
+.second_group{
+    
+}
+.fa-download{
+    padding-left: 10px;
+}
+.fa-user-large{
+    padding-top: 10px;
     padding-left: 3px;
 }
 /*Footer*/

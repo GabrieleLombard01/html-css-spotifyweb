@@ -173,17 +173,34 @@ li{
 }
 
 .info_account{
-    margin-top: 65px;
+    margin-top: 400px;
     width: 100%;
     height: 100px;
-    background-color: azure;
 }
-
+.info_conteined1{
+    margin: auto;
+    height: 50%;
+    width: 90%;
+    border-bottom: solid #5a5a5a 1px;
+    color: #5a5a5a;
+    padding: 20px 5px 5px 5px;
+}
+.info_conteined2{
+    margin: auto;
+    height: 50%;
+    width: 90%;
+    color: #ffffff;
+    padding: 10px 5px 5px 10px;
+}
 
 
 
 @media screen and (min-width:639px){
     .left_large_navbar{display: block;}
+}
+@media screen and (min-width:878px){
+    .left_large_navbar{display: block;width: 330px;}
+    .info_account{margin-top: 440px;}
 }
 /*Footer*/
 .foot_section{
@@ -262,4 +279,10 @@ li{
 .time_vol{
     display: inline-block;
     width: calc(100% / 2.5);
+}
+
+@media screen and (min-width:878px){
+    .foot_option{width: 40px;}
+    .foot_now{width: 100px;}
+    .square_play{width: 100px;}
 }

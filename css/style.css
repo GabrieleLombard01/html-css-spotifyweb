@@ -202,7 +202,7 @@ li{
 
 
 @media screen and (min-width:639px){
-    .left_large_navbar{display: block;}
+    .left_large_navbar{display: block;width: 260px;}
      main{margin-left: 210px;}
     .info_account{margin-top: 230px;}
 

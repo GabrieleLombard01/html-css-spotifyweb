@@ -274,8 +274,13 @@ h5{
 .cards_title{
     text-align: start;
     padding-bottom: 20px;
+    padding-left: 10px;
 }
 
+/*3rd row*/
+.radius_img{
+    border-radius: 50%;
+}
 
 
 /*Footer*/

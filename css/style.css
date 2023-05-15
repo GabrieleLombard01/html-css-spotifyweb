@@ -49,9 +49,18 @@ ul{
 li{
     font-size: 20px;
 }
+h1{
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+h2{
+    font-size: 16px;
+}
 h3{
     text-align: center;
     color: white;
+    font-size: 16px;
 }
 h5{
     text-align: center;
@@ -77,9 +86,7 @@ h5{
 .grey-color{
     color: #5a5a5a;
 }
-.conteiner{
-    border: solid black 1px;
-}
+
 /*Header*/
 #bt_head{
     margin-right: 5px;
@@ -145,6 +152,7 @@ h5{
     height: 50px;
     padding: 15px;
 }
+
 #logo_size{
     width: 200px;
     margin-left: 10px;
@@ -238,7 +246,6 @@ h5{
 }
 /*main contents-CARDS*/
 .cards_conteiner{
-    border: solid black 1px;
     margin: 10px;
     padding: 20px;
 }
@@ -298,6 +305,7 @@ h5{
 .now_fig{
     float: right;
     padding-right: 5px;
+    width: 60px;
 }
 .foot_now{
     height: 100%;
@@ -361,7 +369,12 @@ h5{
     display: inline-block;
     width: calc(100% / 2.5);
 }
-
+.time_line_white{
+    width: 10%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
 @media screen and (min-width:878px){
     .foot_option{width: 40px;}
     .foot_now{width: 100px;}

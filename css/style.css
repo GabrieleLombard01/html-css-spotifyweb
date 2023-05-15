@@ -41,7 +41,7 @@ footer{
 }
 img{
     object-fit: cover;
-    height: 100%;
+    max-width: 100%;
 }
 ul{
     list-style: none;
@@ -223,10 +223,27 @@ li{
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding-bottom: 20px;
 }
 .nav_col{
     font-size: 14.5px;
+}
+/*main contents-CARDS*/
+.cards_conteiner{
+    border: solid black 1px;
+    margin: 10px;
+    padding: 20px;
+}
+.row{
+    background-color: rgb(127, 212, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.col{
+    height: 250px;
+    width: 200px;
+    margin: 5px;
+    background-color: aliceblue;
 }
 
 /*Footer*/

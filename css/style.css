@@ -23,6 +23,12 @@
 a{
     text-decoration: none;
 }
+main{
+    background-color: aquamarine;
+    padding-left: 60px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
 footer{
     background-color: #282828;
     height: 90px;
@@ -197,10 +203,14 @@ li{
 
 @media screen and (min-width:639px){
     .left_large_navbar{display: block;}
+     main{margin-left: 210px;}
+    .info_account{margin-top: 230px;}
+
 }
 @media screen and (min-width:878px){
     .left_large_navbar{display: block;width: 330px;}
-    .info_account{margin-top: 440px;}
+    main{margin-left: 280px;}
+    .info_account{margin-top: 230px;}
 }
 /*Footer*/
 .foot_section{

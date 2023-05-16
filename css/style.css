@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
 
 /*Custom properties*/
 
@@ -138,7 +138,7 @@ footer{
 }
 .account_cont{
    padding: 5px;
-   width: 180px;
+   width: 160px;
    margin: auto;
    cursor: pointer;
 }
@@ -199,15 +199,21 @@ footer{
    .large_sidebar{display: block;}
 }
 /* Header*/
-#bt_head{
+.head_conteiner{
    position: relative;
-   top: 35px;
-   left: 250px;
+   height: 100%;
+   width: 100%;
+}
+#bt_head{
+   position: absolute;
+   top: 25px;
+   right: 60px;
    font-weight: bold;
    color: white;
    border: solid white 2px;
    padding: 10px 20px 10px 20px;
    border-radius: 25px;
+   width: 200px;
 }
 /* Header PSEUDO CLASSES:*/
 #bt_head:hover{
@@ -215,13 +221,11 @@ footer{
 }
 /* Header RESPONSIVE:*/
 @media screen and (min-width:639px) {
-   #bt_head{left: 250px;}
-}
-@media screen and (min-width:878px) {
-   #bt_head{left: 455px;}
+   #bt_head{right: 200px;}
 }
 @media screen and (min-width:1440px) {
-   #bt_head{left: 895px;}
+   #bt_head{right: 270px;}
+
 }
 /* Top nav */
 .flexnav{

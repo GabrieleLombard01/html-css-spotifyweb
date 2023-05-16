@@ -5,287 +5,230 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gabriele Lombardo"> 
-    <meta name="keywords" content="Spotify Riproduci Playlist"> 
+    <meta name="keywords" content="Spotify Riproduci Playlist">  
     <meta name="description" content="riproduzione della web app di spotify">
     <meta name="description" content="Boolean exercise">
     <meta name="description" content="Classe 100">  
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="img/favicon.ico" type="ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;1,800&family=PT+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
 <body>
-<!--Header-->
-<header>
-    <div class="btn">
-        <a id="bt_head" href="#">EFFETTUA L'UPGRADE</a>
-    </div>
-</header>
-<!--left-navbar-->
-<nav>
-    <div class="left_nav">
-        <div class="frs_group">
-            <div class="nav_square">
-                <span ><i class="fa-brands fa-spotify fa-2xl" style="color: #ffffff;"></i></span>
-            </div>
-            <div class="nav_square">
-                <span><i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i></span>
-            </div>
-            <div class="nav_square">
-                <span><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff;"></i></span>
-            </div>
-            <div class="nav_square">
-                <span><i class="fa-solid fa-lines-leaning fa-2xl" style="color: #ffffff;"></i></span>
-            </div>
-        </div>
-        <div class="sec_group">
-            <div class="nav_square">
-                <i class="fa-solid fa-download" style="color: #ffffff;"></i>
-            </div>
-            <div class="nav_square">
-                <i class="fa-solid fa-user-large fa-2xl" style="color: #d6d6d6;"></i>
-            </div>
-        </div>
-    </div>
-
-    <div class="left_large_navbar">
-        <ul>
-            <li><a href="#"><img id="logo_size" src="img/logo.svg" alt="logo"></a></li>
-            <div class="l_nb grey-color">
-                <li><a class="hom white_text" href="#">
-                    <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>Home</a>
-                </li>
-            </div>
-            <div class="l_nb ">
-                <li><a class="grey-color" href="#">
-                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #5a5a5a;"></i>Cerca</a>
-                </li>
-            </div>
-
-            <div class="grey-color l_nb">
-                <li>
-                    <i class="fa-solid fa-lines-leaning fa-xl" style="color: #5a5a5a;"></i>
-                    <a class="space-word grey-color" href="#">La tua libreria</a>
-                </li>
-            </div>
-        </ul>
-        <ul cass="playlist_conteiner">
-            <div class="l_nb">
-                <h2>Playlist</h2>
-            </div>
-            <div class="l_nb2">
-                <li><div id="cros_square">+</div><span id="add_playlist">Crea playlist</span> </li>
-            </div>
-            <div class="l_nb-name">
-                <span class="grey-color">Nome playlist</span>
-            </div>
-            <div class="l_nb-name">
-                <span class="grey-color">Nome playlist</span>
-            </div>
-            <div class="l_nb-name">
-                <span class="grey-color">Nome playlist</span>
-            </div>
-            <div class="l_nb-name">
-                <span class="grey-color">Nome playlist</span>
-            </div>
-            <div class="l_nb-name">
-                <span class="grey-color">Nome playlist</span>
-            </div>
-            <div class="l_nb-name">
-                <span class="grey-color">Nome playlist</span>
-            </div>
-            <div class="l_nb-name">
-                <span class="grey-color">Nome playlist</span>
-            </div>
-        </ul>
-        <div class="info_account">
-            <div class="info_conteined1">
-                <i class="fa-solid fa-download" style="color: #5a5a5a;"></i>
-                <span><strong>Installa app</strong></span>
-            </div>
-            <div class="info_conteined2">
-                <i class="fa-solid fa-user-large fa-lg" style="color: #ffffff;"></i>
-                <span><strong>Gabboux</strong></span>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<!--Main contents-->
-<main>
-<!--top nav-->
-    <div class="conteiner">
-        <nav>
-            <ul class="flex_nav">
-                <li><a class="nav_col grey-color" href="#"><strong>IN EVIDENZA</strong></a></li>
-                <li><a class="nav_col grey-color" href="#"><strong>PODCAST</strong></a></li>
-                <li><a class="nav_col grey-color" href="#"><strong>CLASSIFICHE</strong></a></li>
-                <li><a class="nav_col grey-color" href="#"><strong>GENERI E MOOD</strong></a></li>
-                <li><a class="nav_col grey-color" href="#"><strong>NUOVE USCITE</strong></a></li>
-                <li><a class="nav_col grey-color" href="#"><strong>SCOPRI</strong></a></li>
-            </ul>
-        </nav>
-<!--CARDS 1-->
-
-        <div class="cards_conteiner">
-            <h1 class="white_text">Recently played</h1>
-            <div class="row">
-
-                <div class="col">
-                        <a href="#">
-                            <img src="img/metal_lifting.jpg" alt="card">
-                        </a>
-                        <h3>Heavy Metal</h3>
-                        <h5>Subtitle</h5>
+<!--Upper content-->
+    <div class="upper_content">
+        <!--Left-sidebar-->
+        <div class="sidebar">
+            <div class="small_sidebar">
+                <div class="group">
+                    <span ><i class="fa-brands fa-spotify fa-2xl"></i></span>
+                    <span><i class="fa-solid fa-house fa-2xl"></i></span>
+                    <span><i class="fa-solid fa-magnifying-glass fa-2xl"></i></span>
+                    <span><i class="fa-solid fa-lines-leaning fa-2xl"></i></span>
                 </div>
-                
-                <div class="col">
-                        <a href="#">
-                            <img src="img/stranger.jpeg" alt="card">
-                        </a>
-                        <h3>Heavy Metal</h3>
-                        <h5>Subtitle</h5>
+                <div class="group pos-gr">
+                    <i class="fa-solid fa-download"></i>
+                    <i class="fa-solid fa-user-large fa-2xl"></i>
                 </div>
-                    
-                <div class="col">
-                    <a href="#">
-                        <img src="img/aquietplace.jpeg" alt="card">
-                    </a>
-                    <h3>Heavy Metal</h3>
-                    <h5>Subtitle</h5>
+            </div>
+            <div class="large_sidebar">
+                <div class="side-cel-big">
+                    <a href="#"><img id="logo_size" src="img/logo.svg" alt="logo"></a>
                 </div>
-
-                <div class="col">
-                    
-                    <a href="#">
-                        <img src="img/split.jpeg" alt="card">
-                    </a>
-                    <h3>Heavy Metal</h3>
-                    <h5>Subtitle</h5>
+                <div class="side-cel">
+                    <a class="grey_color" href="#"><i class="fa-solid fa-house fa-xl" ></i> Home</a>
                 </div>
-            
-                <div class="col">
-                    <a href="#">
-                        <img src="img/cure.jpeg" alt="card">
-                    </a>
-                    <h3>Heavy Metal</h3>
-                    <h5>Subtitle</h5>
+                <div class="side-cel">
+                    <a class="grey_color" href="#"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: ;"></i> Cerca</a>
                 </div>
-                
-                <div class="col">
-                    <a href="#">
-                        <img src="img/sinister.jpeg" alt="card">
-                    </a>
-                    <h3>Heavy Metal</h3>
-                    <h5>Subtitle</h5>
-               </div>
-                    
-            </div>
-     </div>
-
-     <!--Cards 2-->
-
-     <div class="cards_conteiner">
-        <div class="cards_title">
-            <h1 class="white_text">Creato per Gabboux</h1>
-            <h4 class="grey-color">Più ascolti, più accurati saranno i suggerimenti.</h4>
-        </div>
-        <div class="row">
-            <div class="col">
-                    <a href="#">
-                        <img src="img/radar.jpeg" alt="card">
-                    </a>
-                    <h3>Heavy Metal</h3>
-            </div>
-            
-            <div class="col">
-                    <a href="#">
-                        <img src="img/mixdaily.jpeg" alt="card">
-                    </a>
-                    <h3>Heavy Metal</h3>
+                <div class="side-cel">
+                    <a class="grey_color" href="#"><i class="fa-solid fa-lines-leaning fa-xl" ></i> La tua libreria</a>
+                </div>
+                <h4 id="playlist_pos">PLAYLIST</h4>
+                <div class="side-cel-big">
+                    <div class="cros_square"><strong>+</strong></div>
+                    <span class="inline_word grey_color">Crea Playlist</span>
+                </div>
+                <div class="scroll_list">
+                    <div class="side-cel grey_color">Nome Playist</div>
+                    <div class="side-cel grey_color">Nome Playist</div>
+                    <div class="side-cel grey_color">Nome Playist</div>
+                    <div class="side-cel grey_color">Nome Playist</div>
+                    <div class="side-cel grey_color">Nome Playist</div>
+                    <div class="side-cel grey_color">Nome Playist</div>
+                    <div class="side-cel grey_color">Nome Playist</div>
+                </div>
+                <div class="account">
+                    <div id="sup_cont" class="account_cont">
+                        <i class="fa-solid fa-download grey_color"></i><span class="grey_color"><strong> Installa app</strong></span>
+                    </div>
+                    <div class="account_cont">
+                        <i class="fa-solid fa-user-large fa-lg grey_color"></i><span><strong> Gabboux</strong></span>
+                    </div>
+                </div>
             </div>
         </div>
-     </div>
-
-     <div class="cards_conteiner">
-        <div class="cards_title">
-            <h1 class="white_text">Artisti più popolari</h1>
-            <h4 class="grey-color">Più ascolti, più accurati saranno i suggerimenti.</h4>
-        </div>
-        <div class="row">
-            <div class="col">
-                    <a class="" href="#">
-                        <img src="img/youg.jpeg" alt="card">
-                    </a>
-                    <h3>Youg</h3>
+        <!--Main content-->
+        <main>
+            <header>
+                <div class="conteiner">
+                    <a id="bt_head" href="#">EFFETTUA L'UPGRADE</a>
+                </div>
+            </header>
+            <!--Top nav-->
+            <nav>
+                <ul class="flexnav">
+                    <li class="nav_cel"><a class="grey_color" href="#"><strong>IN EVIDENZA</strong></a></li>
+                    <li class="nav_cel"><a class="grey_color" href="#"><strong>PODCAST</strong></a></li>
+                    <li class="nav_cel"><a class="grey_color" href="#"><strong>CLASSIFICHE</strong></a></li>
+                    <li class="nav_cel"><a class="grey_color" href="#"><strong>GENERI E MOOD</strong></a></li>
+                    <li class="nav_cel"><a class="grey_color" href="#"><strong>NUOVE USCITE</strong></a></li>
+                    <li class="nav_cel"><a class="grey_color" href="#"><strong>SCOPRI</strong></a></li>
+                </ul>
+            </nav>
+            <!--rows-->
+            <div class="conteiner">
+                <div class="row_title">
+                    <h1>Ascolti recenti</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <figure><a href="#"><img src="img/metal_lifting.jpg" alt="card"></a></figure>
+                        <div class="card_descr">
+                            <h2>Heavy Metal</h2>
+                            <h5 class="grey_color">subtitle</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure><a href="#"><img src="img/stranger.jpeg" alt="card"></a></figure>
+                        <div class="card_descr">
+                            <h2>Stranger Things, Vol. 1 (a Netflix Soundtrack)</h2>
+                            <h5 class="grey_color">subtitle</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure><a href="#"><img src="img/aquietplace.jpeg" alt="card"></a></figure>
+                        <div class="card_descr">
+                            <h2>A quiet piace</h2>
+                            <h5 class="grey_color">subtitle</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure><a href="#"><img src="img/split.jpeg" alt="card"></a></figure>
+                        <div class="card_descr">
+                            <h2>Split</h2>
+                            <h5 class="grey_color">subtitle</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure><a href="#"><img src="img/cure.jpeg" alt="card"></a></figure>
+                        <div class="card_descr">
+                            <h2>A cure for wellness</h2>
+                            <h5 class="grey_color">subtitle</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure><a href="#"><img src="img/sinister.jpeg" alt="card"></a></figure>
+                        <div class="card_descr">
+                            <h2>Sinister</h2>
+                            <h5 class="grey_color">subtitle</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row_title">
+                    <h1>Creato per Gabriele</h1>
+                    <h5 class="grey_color">Più ascolti, più accurati saranno i suggerimenti.</h5>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <figure><a href="#"><img src="img/radar.jpeg" alt="card2"></a></figure>
+                        <div class="card_descr">
+                            <h2>Release Radar</h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure><a href="#"><img src="img/mixdaily.jpeg" alt="card2"></a></figure>
+                        <div class="card_descr">
+                            <h2>Daily Mix 1</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row_title">
+                    <h1>Artisti più popolari</h1>
+                    <h5 class="grey_color">Più ascolti, più accurati saranno i suggerimenti.</h5>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <figure><a href="#"><img src="img/youg.jpeg" alt="card3"></a></figure>
+                        <div class="card_descr">
+                            <h2>Youg</h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure><a href="#"><img src="img/einaudi.jpeg" alt="card3"></a></figure>
+                        <div class="card_descr">
+                            <h2>Einaudi</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="col">
-                    <a href="#">
-                        <img src="img/einaudi.jpeg" alt="card">
-                    </a>
-                    <h3>Einaudi</h3>
-            </div>
-        </div>
-     </div>
+        </main>
     </div>
-</main>
-<!--footer fixed-->
-<footer>
-    <div class="foot_section now_play">
-        <div class="foot_now ">
-            <img class="now_fig" src="img/tyem.jpg" alt="inascolto">
-        </div>
-        <div class="foot_now center_now">
-            <h5 class="white_text">Tyem</h4>
-            <p id="title_song">ULTIMA CHANCE</p>
-        </div>
-        <div class="foot_now">
-            <div class="icon_square">
-                <i class="fa-regular fa-heart fa-lg" style="color: #5a5a5a;"></i>
+<!--Footer-->
+    <footer>
+        <div class="foot_section now_play">
+            <div class="foot_now ">
+                <img class="now_fig" src="img/tyem.jpg" alt="inascolto">
             </div>
-            <div class="icon_square">
-                <i class="fa-regular fa-folder fa-lg" style="color: #5a5a5a;"></i>
+            <div class="foot_now">
+                <h5 class="white_text">Tyem</h5>
+                <h6 class="grey_color">ULTIMA CHANCE</h6>
             </div>
-        </div>
-    </div>
-    <div class="large_f-s foot_section">
-        <div class="flex_player play_sup">
-            <div class="square_play">
-                <i class="fa-solid fa-shuffle fa-xl" style="color: #ffffff;"></i>
-            </div>
-            <div class="square_play">
-                <i class="fa-solid fa-backward-step fa-xl" style="color: #ffffff;"></i>
-            </div>
-            <div class="square_play">
-                <i class="fa-regular fa-circle-play fa-xl" style="color: #ffffff;"></i>
-            </div>
-            <div class="square_play">
-                <i class="fa-solid fa-forward-step fa-xl" style="color: #ffffff;"></i>
-            </div>
-            <div class="square_play">
-                <i class="fa-solid fa-arrow-rotate-right fa-xl" style="color: #ffffff;"></i>
+            <div class="foot_now">
+                <div class="icon_square">
+                    <i class="fa-regular fa-heart fa-lg grey_color"></i>
+                </div>
+                <div class="icon_square">
+                    <i class="fa-regular fa-folder fa-lg grey_color"></i>
+                </div>
             </div>
         </div>
-        <div class="flex_player space_time_line">
-            <span class="minute">0:25</span>
-            <div class="time_line"><div class="time_line_white"></div></div>
-            <span class="minute">3:02</span>
+        <div class="foot_section">
+            <div class="large_f-s">
+                <div class="square_play">
+                    <i class="fa-solid fa-shuffle fa-xl"></i>
+                </div>
+                <div class="square_play">
+                    <i class="fa-solid fa-backward-step fa-xl"></i>
+                </div>
+                <div class="square_play">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+                <div class="square_play">
+                    <i class="fa-solid fa-forward-step fa-xl"></i>
+                </div>
+                <div class="square_play">
+                    <i class="fa-solid fa-arrow-rotate-right fa-xl"></i>
+                </div>
+            </div>
+            <div class="large_f-s">
+                <span class="minute">0:25</span>
+                <div class="time_line"><div class="time_line_white"></div></div>
+                <span class="minute">3:02</span>
+            </div>
         </div>
-    </div>
-    <div class="foot_section section_option">
-        <span class="foot_option"><i class="fa-solid fa-list fa-sm" style="color: #ffffff;"></i></span>
-        <span class="foot_option"><i class="fa-solid fa-desktop fa-sm" style="color: #ffffff;"></i></span>
-        <span class="foot_option"><i class="fa-solid fa-volume-high fa-sm" style="color: #ffffff;"></i></span>
-        <div class="time_vol time_line"><div class="time_line_white"></div></div>
-    </div>
-</footer>
+        <div class="foot_section section_option">
+            <div class="time_vol time_line"><div class="time_line_white"></div></div>
+            <span class="foot_option"><i class="fa-solid fa-list fa-sm"></i></span>
+            <span class="foot_option"><i class="fa-solid fa-desktop fa-sm"></i></span>
+            <span class="foot_option"><i class="fa-solid fa-volume-high fa-sm"></i></span>
+        </div>
+    </footer>
 </body>
 </html>
